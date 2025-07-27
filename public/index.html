@@ -265,5 +265,28 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+      items: 4,
+      margin: 30,
+      loop: true,
+      autoplay: true,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 4 }
+      }
+    });
+
+    $(".chart").easyPieChart({
+      size: 150,
+      barColor: "#fff",
+      scaleColor: false,
+      lineWidth: 10,
+      animate: 2000
+    });
+  });
+</script>
   </body>
 </html>
