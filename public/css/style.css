@@ -62,6 +62,7 @@ body {
     rgba(0, 90, 143, 1) 100%
   );
   color: #fff;
+  padding: 60px 0;
 }
 
 .contactSection {
@@ -76,10 +77,9 @@ body {
 }
 
 .skill {
+  margin: 20px;
   text-align: center;
-  margin-left: 10px;
 }
-
 .chart {
   position: relative;
   width: 152px;
@@ -96,9 +96,12 @@ body {
 
 .chart .percent {
   color: #000;
-  line-height: 152px;
-  display: inline-block;
-  font-size: 35px;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .chart .percent:after {
