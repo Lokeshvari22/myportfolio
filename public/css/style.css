@@ -96,12 +96,9 @@ body {
 
 .chart .percent {
   color: #000;
-  font-size: 24px;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px;
 }
 
 .chart .percent:after {
@@ -383,13 +380,19 @@ body {
 }
 
 .navbar-toggler-icon {
-  background: url(../img/menu.png);
+  background: url(../img/menu1.png);
   background-size: 100%;
 }
 
 .fixedNav #navigation {
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff; /* adjust to match your theme */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional subtle shadow */
+  transition: all 0.3s ease; /* smooth stick effect */
 }
 /* Optional: Better spacing for video and image in project section */
 video, .project-image {
