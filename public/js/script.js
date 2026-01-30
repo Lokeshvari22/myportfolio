@@ -19,6 +19,12 @@ $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
     items: 4,
+    items: 4,
+    nav: true,              // enable arrows
+    navText: [
+      '<i class="fas fa-arrow-left"></i>',   // left arrow icon
+      '<i class="fas fa-arrow-right"></i>'   // right arrow icon
+    ],
     responsive: {
       0: {
         items: 1,
@@ -46,7 +52,18 @@ $(document).ready(function () {
   if ($(".statsSection").length) {
     statsTopOffset = $(".statsSection").offset().top;
   }
-
+  $(".chart").easyPieChart({
+  easing: "easeInOut",
+  barColor: "#3498db",   // visible color
+  trackColor: "#ddd",
+  scaleColor: false,
+  lineWidth: 4,
+  size: 152,
+  animate: 2000,
+  onStep: function (from, to, percent) {
+    $(this.el).find(".percent").text(Math.round(percent));
+  },
+  });
  
   $(window).scroll(function () {
     if (statsTopOffset &&

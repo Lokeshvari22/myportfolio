@@ -4,7 +4,9 @@ body {
   background-color: #fff;
   letter-spacing: 1px;
 }
-
+.justify-text{
+  text-align: justify;
+}
 
 .overlay {
   width: 100%;
@@ -406,4 +408,21 @@ video, .project-image {
 .contactSection a.contactButton {
   display: inline-block;
   margin: 10px;
+}
+.owl-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-nav button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #fff; /* adjust to match your theme */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.owl-nav button:hover {
+  color: #3498db; /* highlight color on hover */
 }
